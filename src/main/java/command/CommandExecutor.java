@@ -7,7 +7,7 @@ import java.util.EnumMap;
 import java.util.Map;
 
 public final class CommandExecutor {
-    private static final Map<Operation, Command> allKnownCommandsMap = new EnumMap<>(Operation.class);;
+    private static final Map<Operation, Command> allKnownCommandsMap = new EnumMap<>(Operation.class);
 
     static {
         allKnownCommandsMap.put(Operation.LOGIN, new LoginCommand());

@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 class WithdrawCommand implements Command {
-    private ResourceBundle res = ResourceBundle.getBundle("withdraw");
+    private final ResourceBundle res = ResourceBundle.getBundle("withdraw");
 
     @Override
     public void execute() throws InterruptOperationException {

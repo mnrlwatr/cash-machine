@@ -8,7 +8,7 @@ import service.CurrencyManipulator;
 import java.util.ResourceBundle;
 
 class InfoCommand implements Command {
-    private ResourceBundle res = ResourceBundle.getBundle("info");
+    private final ResourceBundle res = ResourceBundle.getBundle("info");
 
     @Override
     public void execute() {

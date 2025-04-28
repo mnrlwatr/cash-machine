@@ -6,8 +6,8 @@ import service.util.ConsoleHelper;
 import java.util.ResourceBundle;
 
 class LoginCommand implements Command {
-    private ResourceBundle validCreditCards = ResourceBundle.getBundle("verifiedCards");
-    private ResourceBundle res = ResourceBundle.getBundle("login");
+    private final ResourceBundle validCreditCards = ResourceBundle.getBundle("verifiedCards");
+    private final ResourceBundle res = ResourceBundle.getBundle("login");
 
 
     @Override

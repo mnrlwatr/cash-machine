@@ -8,7 +8,7 @@ import service.util.ConsoleHelper;
 import java.util.ResourceBundle;
 
 class ExitCommand implements Command {
-    private ResourceBundle res = ResourceBundle.getBundle("exit");
+    private final ResourceBundle res = ResourceBundle.getBundle("exit");
 
     @Override
     public void execute() throws InterruptOperationException {

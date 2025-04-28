@@ -5,8 +5,8 @@ import exception.NotEnoughMoneyException;
 import java.util.*;
 
 public class CurrencyManipulator {
-    private String currencyCode;
-    private Map<Integer, Integer> denominations;
+    private final String currencyCode;
+    private final Map<Integer, Integer> denominations;
 
     public CurrencyManipulator(String currencyCode) {
         this.currencyCode = currencyCode;

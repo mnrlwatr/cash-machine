@@ -5,14 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CurrencyManipulatorFactory {
-    private static Map<String, CurrencyManipulator> map = new HashMap<>();
+    private static final Map<String, CurrencyManipulator> map = new HashMap<>();
 
     private CurrencyManipulatorFactory() {
     }
 
     public static CurrencyManipulator getManipulatorByCurrencyCode(String currencyCode) {
-        currencyCode = currencyCode.toUpperCase();
-        if (!map.containsKey(currencyCode)) {
+        if (!map.containsKey(currencyCode.toUpperCase())) {
             CurrencyManipulator manipulator = new CurrencyManipulator(currencyCode);
             map.put(manipulator.getCurrencyCode(), manipulator);
         }

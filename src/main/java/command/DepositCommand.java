@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 
 class DepositCommand implements Command {
-    private ResourceBundle res = ResourceBundle.getBundle("deposit");
+    private final ResourceBundle res = ResourceBundle.getBundle("deposit");
 
     @Override
     public void execute() throws InterruptOperationException {
